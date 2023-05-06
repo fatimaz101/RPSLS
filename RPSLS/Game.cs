@@ -176,7 +176,13 @@ namespace RPSLS
 
         public void DisplayGameWinner()
         {
-
+            if(playerOne.score == 2)
+            {
+                Console.WriteLine($"{playerOne.name} wins!");
+            }else if (playerTwo.score == 2)
+            {
+                Console.WriteLine($"{ playerTwo.name} wins!");
+            }
         }
 
         public void RunGame()
