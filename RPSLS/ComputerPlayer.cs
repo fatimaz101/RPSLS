@@ -20,3 +20,4 @@ namespace RPSLS
             chosenGesture = gestures[index];
         }
     }
+}
