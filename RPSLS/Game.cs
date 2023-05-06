@@ -39,7 +39,25 @@ namespace RPSLS
 
         public int ChooseNumberOfHumanPlayers()
         {
-            return 0;
+            Console.WriteLine("Choose how many players ?(max 2)");
+            int numberOfPlayers = Convert.ToInt32(Console.ReadLine());
+            if(numberOfPlayers ==1 || numberOfPlayers == 2)
+            {
+                return numberOfPlayers;
+            }else if(numberOfPlayers > 2)
+            {
+                Console.WriteLine("Too many players, try again.");
+                ChooseNumberOfHumanPlayers();
+                return numberOfPlayers;
+            }else if (numberOfPlayers < 1)
+            {
+                Console.WriteLine("Not enough players, try again.");
+                ChooseNumberOfHumanPlayers();
+                return numberOfPlayers;
+            }
+
+            return numberOfPlayers;
+            
         }
 
         public void CreatePlayerObjects(int numberOfHumanPlayers)
@@ -68,6 +86,7 @@ namespace RPSLS
           //Step 7. Display winner 
           
             WelcomeMessage();
+            ChooseNumberOfHumanPlayers();
         }
     }
 }
