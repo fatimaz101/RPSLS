@@ -13,6 +13,7 @@ namespace RPSLS
         //Member Variabes (HAS A)
         public Player playerOne;
         public Player playerTwo;
+        int numberOfPlayers = 0;
 
         //Constructor
         public Game()
@@ -197,6 +198,25 @@ namespace RPSLS
           
             WelcomeMessage();
             ChooseNumberOfHumanPlayers();
+            CreatePlayerObjects(numberOfPlayers);
+
+            for (int i = 0; i < 1; i++)
+            {
+                playerOne.ChooseGesture();
+                playerTwo.ChooseGesture();
+                CompareGestures();
+
+                if(playerOne.score !=2 || playerTwo.score != 2)
+                {
+                    i = 0;
+                }
+                else if (playerOne.score ==2 || playerTwo.score == 2)
+                {
+                    i = 1;
+                }
+            }
+
+            DisplayGameWinner();
         }
     }
 }

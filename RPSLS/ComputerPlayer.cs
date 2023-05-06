@@ -19,4 +19,4 @@ namespace RPSLS
             int index = rand.Next(gestures.Count);
             chosenGesture = gestures[index];
         }
-}
+    }
