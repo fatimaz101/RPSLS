@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace RPSLS
@@ -22,17 +23,18 @@ namespace RPSLS
         //Member Methods (CAN DO)
         public void WelcomeMessage()
         {
-            Console.WriteLine("Welcome to RPSLS! Here are the game rules:" +
-                "Rock crushes Scissors" +
-                "Scissors cuts Paper" +
-                "Paper covers Rock " +
-                "Rock crushes Lizard" +
-                "Lizard poisons Spock" +
-                "Spock smashes Scissors" +
-                "Scissors decapitates Lizard" +
-                "Lizard eats Paper" +
-                "Paper disproves Spock" +
-                "Spock vaporizes Rock");
+            Console.WriteLine("Welcome to RPSLS! Here are the game rules:");
+            Console.WriteLine("Rock crushes Scissors");
+            Console.WriteLine("Scissors cuts Paper");
+            Console.WriteLine("Paper covers Rock");
+
+            Console.WriteLine("Rock crushes Lizard");
+            Console.WriteLine( "Lizard poisons Spock");
+            Console.WriteLine("Spock smashes Scissors");
+            Console.WriteLine("Scissors decapitates Lizard");
+            Console.WriteLine( "Lizard eats Paper");
+            Console.WriteLine( "Paper disproves Spock");
+            Console.WriteLine( "Spock vaporizes Rock");
 
             
         }
