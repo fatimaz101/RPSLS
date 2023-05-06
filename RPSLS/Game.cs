@@ -83,7 +83,95 @@ namespace RPSLS
 
         public void CompareGestures()
         {
+            Console.WriteLine($"Player one chose {playerOne.chosenGesture} and Player two chose {playerTwo.chosenGesture} ");
+            if (playerOne.chosenGesture == "rock" && playerTwo.chosenGesture == "scissors")
+            {
+                Console.WriteLine("Rock crushes Scissors");
+                playerOne.score++;
+            }
+            else if (playerTwo.chosenGesture == "rock" && playerOne.chosenGesture == "scissors")
+            {
+                Console.WriteLine("Rock crushes Scissors");
+                playerTwo.score++;
+            }
+            else if (playerOne.chosenGesture == "scissors" && playerTwo.chosenGesture == "paper")
+            {
+                Console.WriteLine("Scissors cuts Paper");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "scissors" && playerOne.chosenGesture == "paper")
+            {
 
+                Console.WriteLine("Scissors cuts Paper");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "paper" && playerTwo.chosenGesture == "rock")
+            {
+                Console.WriteLine("Paper covers rock");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "paper" && playerOne.chosenGesture == "rock")
+            {
+                Console.WriteLine("Paper covers rock");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "rock" && playerTwo.chosenGesture == "lizard")
+            {
+                Console.WriteLine("Rock crushes Lizard");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "rock" && playerOne.chosenGesture == "lizard")
+            {
+                Console.WriteLine("Rock crushes Lizard");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "lizard" && playerTwo.chosenGesture == "spock")
+            {
+                Console.WriteLine("Lizard Poisons Spock");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "lizard" && playerOne.chosenGesture == "spock")
+            {
+                Console.WriteLine("Lizard Poisons Spock");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "spock" && playerTwo.chosenGesture == "scissors")
+            {
+                Console.WriteLine("Spock smashes Scissors");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "spock" && playerOne.chosenGesture == "scissors")
+            {
+                Console.WriteLine("Spock smashes Scissors");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "scissors" && playerTwo.chosenGesture == "lizard")
+            {
+                Console.WriteLine("Scissors decapitates Lizard");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "scissors" && playerOne.chosenGesture == "lizard")
+            {
+                Console.WriteLine("Scissors decapitates Lizard");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "lizard" && playerTwo.chosenGesture == "paper")
+            {
+                Console.WriteLine("Lizard eats Paper");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "lizard" && playerOne.chosenGesture == "paper")
+            {
+                Console.WriteLine("Lizard eats Paper");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "paper" && playerTwo.chosenGesture == "spock")
+            {
+                Console.WriteLine("Paper disproves Spock");
+                playerOne.score++;
+            }else if(playerTwo.chosenGesture == "paper" && playerOne.chosenGesture == "spock")
+            {
+                Console.WriteLine("Paper disproves Spock");
+                playerTwo.score++;
+            }else if(playerOne.chosenGesture == "spock" && playerTwo.chosenGesture == "rock")
+            {
+
+                Console.WriteLine("Spock vaporizes Rock");
+                playerOne.score++;
+            }else if (playerTwo.chosenGesture == "spock" && playerOne.chosenGesture == "rock")
+            {
+                Console.WriteLine("Spock vaporizes Rock");
+                playerTwo.score++;
+            }else if (playerOne.chosenGesture == playerTwo.chosenGesture)
+            {
+                Console.WriteLine("Tie! Go again.");
+            }
         }
 
         public void DisplayGameWinner()
